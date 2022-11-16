@@ -119,7 +119,7 @@
             'q' : searchText,
         };
 
-        console.log(params)
+        console.log(params) 
 
         apigClient.searchGet(params, {}, {})
             .then(function(result) {
@@ -129,6 +129,7 @@
                 base64 = result["data"]["base64"];
                 console.log("base64data:",base64);
                 console.log("image_paths : ", image_paths);
+                console.log("test:",image_paths)
 
                 var photosDiv = document.getElementById("photos_search_results");
                 photosDiv.innerHTML = "";
